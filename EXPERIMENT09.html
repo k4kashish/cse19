@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Responsive Product Grid</title>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background: #f8f8f8;
+    }
+
+    header {
+        background: #333;
+        color: #fff;
+        padding: 1rem;
+        text-align: center;
+    }
+
+    .product-grid {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 1rem;
+        padding: 1rem;
+        max-width: 1200px;
+        margin: auto;
+    }
+
+    .product {
+        background: #fff;
+        border-radius: 8px;
+        overflow: hidden;
+        box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        transition: transform 0.2s ease;
+    }
+
+    .product:hover {
+        transform: translateY(-5px);
+    }
+
+    .product img {
+        width: 100%;
+        display: block;
+    }
+
+    .product-info {
+        padding: 1rem;
+    }
+
+    .product-info h3 {
+        margin: 0 0 0.5rem;
+        font-size: 1.1rem;
+    }
+
+    .product-info p {
+        color: #555;
+        font-size: 0.9rem;
+    }
+
+    .price {
+        color: #e63946;
+        font-weight: bold;
+        margin-top: 0.5rem;
+    }
+
+    @media (min-width: 600px) {
+        .product-grid {
+            grid-template-columns: repeat(2, 1fr);
+        }
+    }
+
+    @media (min-width: 900px) {
+        .product-grid {
+            grid-template-columns: repeat(4, 1fr);
+        }
+    }
+</style>
+</head>
+<body>
+
+<header>
+    <h1>Responsive Product Grid</h1>
+</header>
+
+<section class="product-grid">
+    <div class="product">
+        <img src="Drafter image.png" alt="Drafter">
+        <div class="product-info">
+            <h3>Drafter</h3>
+            <p>Antiquity TYPE MINI DRAFTER WITH COVER MINI DRAFTER MACHINE Drafting Machine</p>
+            <div class="price">Rs300</div>
+        </div>
+    </div>
+
+    <div class="product">
+        <img src="Drawing Board.png" alt="Drawing Board">
+        <div class="product-info">
+            <h3>Drawing Board</h3>
+            <p>Uttam Fiber Brown Drawing Board Cover  (16 inch 23 inch)</p>
+            <div class="price">Rs400</div>
+        </div>
+    </div>
+
+    <div class="product">
+        <img src="12 Register set.png" alt="Register">
+        <div class="product-info">
+            <h3>12 Registers</h3>
+            <p>N.S Bright A4 Size Register Notebook for Students - Single Line Ruled (29 x 21 cm) |
+                 Pack Set of 12 With Free 5 Ballpens for Smooth Writing, 200 Pages</p>
+            <div class="price">Rs1000</div>
+        </div>
+    </div>
+
+    <div class="product">
+        <img src="Scientific Calculator.png" alt="Scientific Calculator">
+        <div class="product-info">
+            <h3>Scientific Calculator</h3>
+            <p>CASIO FX-991ES Plus-2nd Edition Scientific Scientific Calculator </p>
+            <div class="price">Rs1500</div>
+        </div>
+    </div>
+</section>
+
+</body>
+</html>
