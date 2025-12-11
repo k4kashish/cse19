@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Student Profile Cards</title>
+<style>
+    
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    body {
+        font-family: Arial, sans-serif;
+        background-color: #f4f4f4;
+        height: 100vh;
+        display: flex;
+        justify-content: center; 
+        align-items: center;     
+    }
+
+    .container {
+        display: flex;
+        flex-direction: row; 
+        justify-content: center;
+        align-items: center;     
+        gap: 20px; 
+        flex-wrap: wrap; 
+    }
+
+    .card {
+        background-color: white;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        width: 250px;
+        padding: 20px;
+        text-align: center;
+        transition: transform 0.3s ease;
+    }
+
+    .card:hover {
+        transform: translateY(-5px);
+    }
+
+    .card img {
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+        object-fit: cover;
+        margin-bottom: 15px;
+    }
+
+    .card h3 {
+        margin-bottom: 10px;
+        color: #333;
+    }
+
+    .card p {
+        font-size: 14px;
+        color: #666;
+    }
+</style>
+</head>
+<body>
+
+<div class="container">
+    <div class="card">
+        <div class="avatar">DT</div>
+        <h3>Disha Tripathi</h3>
+        <p>B Tech-Computer Science</p>
+        <p>Roll No: 15CS1101</p>
+         <P>1st Year</P>
+    </div>
+    <div class="card">
+        <div class="avatar">YC</div>
+        <h3>Yuvraj Choudhary</h3>
+        <p>B Tech-Information Technology</p>
+        <p>Roll No: 25IT1262</p>
+        <P>1st Year</P>
+        
+    </div>
+    <div class="card">
+        <div class="avatar">MS</div>
+        <h3>Manvi Sanrachana</h3>
+        <p>B Tech-Electronics</p>
+        <p>Roll No: 25EC2103</p>
+         <P>1st Year</P>
+    </div>
+</div>
+
+</body>
+</html>
