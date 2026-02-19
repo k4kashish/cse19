@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Student Registration Form</title>
+<style>
+    *{
+     margin:0;
+     padding:0;
+     box-sizing:border-box;
+     font-family:Arial;
+     }
+   body{
+    background-color:white;
+    font-family:Arial;
+    }
+   button{
+    width:100%;
+    padding:10px;
+    background-color:cyanblue;
+    cursor:pointer;
+}
+</style>
+</head>
+<body>
+<center>
+<h2><b>Student Registration Form</b></h2>
+</center>
+<hr>
+<form action="./submit.html"method="post">
+<label>Full Name:</label>
+<input type="text" name="Full Name" placeholder="Enter your full name" required>
+<br><br>
+<label>Father Name:</label>
+<input type="text" name="Father Name" placeholder="Enter your father name" required>
+<br><br>
+
+<label>Date of Birth:</label>
+<input type="Date" name="Date of BIrth" placeholder="Enter your D.O.B" required>
+<br><br>
+
+<label>Email:</label>
+<input type="email" name="email" placeholder="Enter valid email address" required>
+<br><br>
+<label>Password:</label>
+<input type=:"Password" name="Password" placeholder="Enter your password" required>
+<br><br>
+<label>Gender:</label>
+<input type="radio" name="gender" value="male">Male
+<input type="radio" name="gender" value="female">Female
+<input type="radio" name="gender" value="Other">Other
+<br><br>
+<label>Course:</label>
+<select name="course"required>
+<option value=" ">--Select Course--</option>
+<option value="Bca">BCA</option>
+<option value="Bsc">BCA</option>
+<option value="B.Tech">B.TECH</option>
+<option value="B.A">B.A</option>
+</select>
+<br><br>
+ <label>Contact No.:</label> 
+ <input type="tel" name="contact" placeholder="Enter phone number" required> 
+ <br><br> 
+ <label>Address:</label> 
+ <br> 
+ <textarea name="address" rows="4" cols="40" placeholder="Enter your address"></textarea> 
+ <br><br> 
+ <input type="submit" value="Register"> 
+ <input type="reset" value="clear"> 
+ </form> 
+ <hr> 
+ <center> &copy; 2025 Student Registration Portal</center> 
+</body> 
+</html> 
+
+
